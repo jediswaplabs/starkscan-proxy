@@ -16,7 +16,7 @@ def proxy(path):
   contract_address = request.args.get('contract_address')
   owner_address = request.args.get('owner_address')
   
-  path = path.removeprefix("api/starkscan-proxy/")
+  path = path.removeprefix("api/")
 
   return get(f'{SITE_NAME}{path}', params = {"contract_address": contract_address, "owner_address": owner_address}, headers = {"X-API-KEY": API_KEY}).content
 
