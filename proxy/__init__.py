@@ -6,7 +6,7 @@ app = Flask(__name__)
 SITE_ENV = os.environ.get('SITE_ENV', None)
 API_KEY = os.environ.get('API_KEY', None)
 if SITE_ENV == "testnet":
-  SITE_NAME = 'https://api-testnet.starkscan.co/'
+  SITE_NAME = 'https://api-sepolia.starkscan.co/'
 elif SITE_ENV == "mainnet":
   SITE_NAME = 'https://api.starkscan.co/'
 
