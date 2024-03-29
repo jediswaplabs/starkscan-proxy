@@ -2,6 +2,7 @@
 name = "starkscan-proxy"
 version = "0.1.0"
 description = "Transparent Proxy to call starkscan APIs"
+authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
